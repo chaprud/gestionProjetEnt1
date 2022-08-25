@@ -458,6 +458,17 @@ footer li a
 
 
                   /* le responsive: */
+ @media only screen and (max-width: 1360px){
+    .textePart2{
+        display: block;
+       text-align: center;
+    }
+    .container{
+        display: none;
+
+    }
+
+}
 
 @media only screen and (max-width: 900px){
     header{
@@ -586,3 +597,4 @@ footer li a
     }
       
 }
+
