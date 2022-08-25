@@ -7,8 +7,9 @@
     <title>Document</title>
     <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+   
     
 </head>
 <body>
@@ -154,7 +155,7 @@
     </section>
     <section id="contact">
         <h2>Contact</h2> 
-        <p>Une question, une réservation d'un service de coiffure ? Pour une prestation de service de <br>
+        <p>Une question, une réservation d'un service de coiffure ?<br> Pour une prestation de service de 
         coiffure (coupe homme ou femme, couleur, mèches, pose  d'extensions, technique ou  autre...?)<br>
         Une demande d'un devis de mariage?<br>
         N'hésitez pas à laisser votre demande en utilisant le formulaire, je saurai vous répondre.</p>
@@ -179,8 +180,12 @@
             </div>
             <div>
                 <label for="Objet">Objet :<span> * </span></label>
-                <input type="text" name="ojet" id="pobjet" minlength="1"placeholder="Veuillez rédiger ici"required >
-            </div>
+                <select name="liste" id="liste">
+                    <option value="Vide" selected></option>
+                    <option value="priseRdv">Demande de prise de RDV</option>
+                    <option value="prestation" >Devis pour une prestation</option>
+                    <option value="renseignements">Autres renseignements</option>
+                </select>
             <div>
                 <label for="Message"> Message : <span> * </span></label>
                 <textarea type="text" name="message" id="message" minlength="2" placeholder="Veuillez rédiger ici" required maxlength="300" rows="5" > </textarea>

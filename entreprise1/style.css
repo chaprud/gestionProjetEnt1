@@ -5,7 +5,11 @@
 }
 
 
-
+body
+{
+    max-width: 1920px;
+    height: auto;
+}
 
 header{
     position:sticky;
@@ -54,9 +58,6 @@ nav{
     border-bottom:2px solid #43b187;
     
 }
-
-
-
 .logo img
  {
      width: 23vh; 
@@ -261,26 +262,28 @@ nav{
     margin: auto;
 }
 
-.part2 img{
+.part2 img
+{
     width: 300px;
     height: 400px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 50px;
     /* border-radius: 15px; */
+}
 
                   /*page contact*/
-}
+
 #contact
 {
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr;
     width: 100%;
     height: auto;
     max-width: 1920px;
     min-width: 300px;
     background-color: #C8AD7F;
-    color: white;
+    color: white;   
 }
 
 #contact > h2
@@ -294,15 +297,15 @@ nav{
 
 #contact > p
 {
-    text-indent: 20px; 
+    text-indent: 30px; 
     grid-row: 2;
-    grid-column:1 /span2 ;
-    text-align: center;
-    margin: 20px 0px 75px 0px;
-    font-size: 3.5vh;
-    width: 100%; 
-    align-self: center; 
-    
+    grid-column: 1 /span2;
+    margin: 30px 0px 75px ;
+    font-size: 3.5vh; 
+    justify-self: center;
+    text-align: justify; 
+    max-width: 1920px;
+     
 }
 
 #contact > iframe
@@ -310,7 +313,7 @@ nav{
     grid-row: 3;
     grid-column: 2;
     align-self: flex-start;
-    justify-self: center;  
+    justify-self: start;  
     margin-top: 15px;
     border: 3px solid black;
     border-radius: 15px;
@@ -320,7 +323,6 @@ form
 {
     grid-row: 3;
     grid-column: 1;
-    margin-left: 150px;
     margin-bottom: 30px;
     min-width: 400px;
     max-width: 400px;
@@ -329,6 +331,8 @@ form
     box-shadow: 0px 0px 10px  5px white;
     background-color:#00360D  ;
     padding: 10px;
+    align-self: center;
+    justify-self: center;
 }
 
 form  label
@@ -376,7 +380,9 @@ form div
     width: 100%;
     margin-left: 5px;
     margin-right: 50px;
+    padding-right: 5px;
     font-size: 0.7em;
+    text-align: justify;
 }
 
 #button
@@ -386,8 +392,7 @@ form div
 }
 
 form  input:nth-child(1)
-{
-    
+{   
     font-weight:400;
     border-radius: 15px ;
     font-family: Courier New, monospace;
@@ -409,13 +414,22 @@ form  input:nth-child(1):hover
 
 form textarea
 {
-    min-width: 190px;
-    max-width: 190px;
+    min-width: 196px;
+    max-width: 200px;
     height: auto;
     border: 1px solid grey;
     border-radius: 3px;
 }
 
+select
+{
+    padding: 2px 3px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-weight: 700;
+
+}
 span
 {
     color:red;
@@ -441,6 +455,7 @@ footer ul
     padding: 0px;
     color: white;     
 }
+
 footer li
 {
    list-style: none;
@@ -451,8 +466,7 @@ footer li
 footer li a
 {
     text-decoration: none;
-    color: white;
-    
+    color: white;   
 }
 
 
@@ -469,7 +483,7 @@ footer li a
 
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 850px){
     header{
         height: 16vh;
         z-index: 999;
@@ -553,17 +567,23 @@ footer li a
         align-items: center;
         min-width: 300px;
         max-width: 900px;
+
     }
 
     #contact h2
     {
-        font-size: 6vh;
+        font-size: 4.5vh;
         
     }
 
     #contact p
     {
-        font-size: 3vh;
+        font-size: 2.35vh;
+        margin: 50px 0px;
+        padding:0px 10px;
+       
+       
+       
     }
     form
     {
@@ -578,7 +598,7 @@ footer li a
     }
     #checkbox
     {
-        margin: 15px 0px 10px 60px ;
+        padding: 5px;
     }
 
     #contact > iframe
@@ -594,6 +614,9 @@ footer li a
         margin: 0px 0px 0 10px;
         text-indent: 10px;
     }
-      
+    footer li
+    {
+       margin: 0px 10px; 
+    } 
 }
 
