@@ -76,20 +76,20 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: center;
+    
 }
-.horraire{
-    border: solid 1px white;
-    padding: 10px;
-    margin-top: 2vh;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
+
 .telephone{
     border: solid 1px white;
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    box-sizing: border-box;
+    text-align: justify;
+    
+   
 
 }
 /*******Image de fond**********/
@@ -217,12 +217,19 @@ nav{
     color: white;
     font-size: 3.5vh;
     text-align: start;
-    margin-top: 60px;
-    margin-bottom: 10vh;
+    margin-top: 20px;
+    margin-bottom: 2vh;
     padding: 30px;
+    text-align: justify;
     
     
 
+}
+.textePart2 p{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 
@@ -430,10 +437,7 @@ select
     font-weight: 700;
 
 }
-span
-{
-    color:red;
-}
+
                             /* footer*/
 
 footer
@@ -471,7 +475,7 @@ footer li a
 
 
                   /* le responsive: */
- @media only screen and (max-width: 1360px){
+ @media only screen and (max-width: 1580px){
     .textePart2{
         display: block;
        text-align: center;
@@ -549,6 +553,12 @@ footer li a
     .textePart2{
         display: block;
        text-align: center;
+    }
+    .part1{
+        flex-direction: column;
+    }
+    .part2{
+        flex-direction: column;
     }
     .formap{
         display: flex;
