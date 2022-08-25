@@ -1,0 +1,238 @@
+
+                           /* Contact*/
+
+
+
+#contact
+{
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    grid-template-rows: auto auto 1fr;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    min-width: 300px;
+    background-color: #C8AD7F;
+    color: white;
+}
+
+#contact > h2
+{
+   grid-row: 1;
+   grid-column: 1 /span2; 
+   text-align: center;
+   font-size: 8vh;
+}
+
+#contact > p
+{
+    text-indent: 20px; 
+    grid-row: 2;
+    grid-column:1 /span2 ;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3.5vh;
+    width: 100%;   
+}
+
+#contact > iframe
+{
+    grid-row: 3;
+    grid-column: 2;
+    align-self: flex-start;
+    justify-self: center;  
+    margin-top: 15px;
+}
+
+form
+{
+    grid-row: 3;
+    grid-column: 1;
+    margin-left:100px ;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+form  label
+{
+   display: block;
+   float: left;
+   width: 100px;  
+}
+
+form input
+{
+    padding: 2px 5px 2px 25px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+#email
+{
+    background-image: url('iconeAdresseMail.png');
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+#telephone
+{
+    background-image: url('telephone.png');
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+form div
+{
+    margin: 15px 0;
+}
+
+#checkbox
+{
+    display:flex;
+    align-items: flex-start;
+    height: auto;
+   
+
+}
+
+#checkbox label
+{
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 50px;
+    font-size: 0.7em;
+}
+
+#button
+{
+    text-align: center;
+    width:100%;
+}
+
+form  input:nth-child(1)
+{
+    border: white;
+    font-weight:400;
+    border-radius: 15px ;
+    font-family: Courier New, monospace;
+    padding: 6px 10px;
+    background-color:#00360D ;
+    color: white; 
+    transition:all 0.4s ease-in; 
+}
+
+form  input:nth-child(1):hover
+{
+    transform: scale(1.1);
+    font-weight:bold;
+    border: #00360D;
+    background-color:white ;
+    color: #00360D;
+}   
+
+form textarea
+{
+    min-width: 190px;
+    max-width: 190px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+span
+{
+    color:red;
+}
+            /* Contact responsive*/
+
+@media screen and (max-width: 800px)    
+{
+    #contact
+    {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        min-width: 300px;
+        max-width: 800px;
+    }
+
+    #contact h2
+    {
+        font-size: 6vh;
+        
+    }
+
+    #contact p
+    {
+        font-size: 3vh;
+    }
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        min-width:200px;
+        margin: 0px;
+        
+    }
+    #checkbox
+    {
+        margin: 15px 0px 10px 60px ;
+    }
+
+    #contact > iframe
+    {
+        align-self: center;
+        order: 3;
+        width: auto;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    #checkbox label
+    {
+        margin: 0px 0px 0 10px;
+        text-indent: 10px;
+    }
+
+}
+
+                            /* footer*/
+
+footer
+{
+    background-color:#00360D;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    font-size: 0.4em;
+    display: flex;
+    justify-items: center;
+    Align-items:center;
+   
+}
+
+footer ul
+{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    margin: auto;   
+}
+footer li
+{
+   list-style: none;
+   display:inline;
+   margin: 0px 50px;
+   
+}
+
+footer li a
+{
+    text-decoration: none;
+    color: white;
+    Align-items:center;
+    
+
+}

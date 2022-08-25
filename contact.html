@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+
+    <title>Document</title>
+</head>
+<body>
+<container id="contact">
+    <h2>Contact</h2> 
+    <p>Une question, une réservation d'un service de coiffure ? Pour une prestation de service de <br>
+    coiffure (coupe homme ou femme, couleur, mèches, pose  d'extensions, technique ou  autre...?)<br>
+    Une demande d'un devis de mariage?<br>
+    N'hésitez pas à laisser votre demande en utilisant le formulaire, je saurai vous répondre.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.7220506625786!2d1.4630607542009566!3d43.63314369588745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea33671e613a3%3A0x58078122e95d9c32!2s2%20Rue%20de%20la%20Libert%C3%A9%2C%2031200%20Toulouse!5e0!3m2!1sfr!2sfr!4v1661328147623!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <form method="post" action="formulairContact" >
+        <div>
+            <label for="Nom">NOM :<span> *</span></label>
+            <input type="text" name="Nom" id="Nom"minlength="1"placeholder="ex:DUBOIS"required>
+        </div>
+        <div>
+            <label for="Prénom">Prénom :<span> * </span></label>
+            <input type="text" name="Prénom" id="prenom" minlength="1"placeholder="ex:Baptiste"required >
+        </div>
+        <div>
+            <label for="Téléphone">Téléphone : <span> * </span></label>
+            <input type="tel" name="Téléphone" id="telephone" minlength="10"placeholder="ex: 0x xx xx xx xx"required >
+        </div>
+        <div>
+            <label for="email">Email : <span> * </span></label>
+            <input type="email" name="email" id="email" minlength="2"placeholder="ex: monemail@gmail.com"required >
+        </div>
+        <div>
+            <label for="Objet">Objet :<span> * </span></label>
+            <input type="text" name="ojet" id="pobjet" minlength="1"placeholder="Veuillez rédiger ici"required >
+        </div>
+        <div>
+            <label for="Message"> Message : <span> * </span></label>
+            <textarea type="text" name="message" id="message" minlength="2" placeholder="Veuillez rédiger ici" required maxlength="300" rows="5" > </textarea>
+        </div>
+        <div id="checkbox">
+            <input type="checkbox"  required> <label for="checkbox" > J'accepte que LCV collecte et utilise les données personnelles renseignés dans ce formulaire.Pour plus d'information, vous pouvez consulter notre page politique de protection de données </label>
+        </div>
+        <div id="button">
+            <input type="submit" value="ENVOYER">
+        </div>
+   </form>
+</container>
+<footer>
+    <ul id="footer">
+        <li><a href="">conditions générales</a></li>
+        <li> <a href="">politique de confidentialité</a></li>
+    </ul>
+</footer>
+
+
+</body>
+</html>
