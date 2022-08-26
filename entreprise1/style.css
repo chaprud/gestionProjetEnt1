@@ -65,9 +65,9 @@ nav{
     padding: 16px 10px;
     text-decoration: none;
 }
-.logo img
+.logo 
  {
-     width: 23vh; 
+     width: 21vh; 
     height: auto; 
  }
     
@@ -129,7 +129,8 @@ nav{
     font-family: 'EB Garamond', serif;
 }
 
-.photo img{
+.photo img
+{
     width: 400px;
     height: 600px;
   
@@ -512,8 +513,14 @@ footer li a
     .logo{
         position: relative;
         z-index: 20;
-        font-size: 5em;
+        width: 14vh;  
     }
+    /* .logo img
+    {
+        width: 10vh; 
+       height: auto; 
+    }  */
+
     .ouvrir {
         display: block;
     }
@@ -533,6 +540,7 @@ footer li a
         width: 100%;
         height: 100vh;
         background-color: #002308;
+        
         
         flex-direction: column;
         padding: 2rem;
